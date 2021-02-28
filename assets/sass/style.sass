@@ -1,0 +1,65 @@
+* 
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  font-family: 'Roboto', sans-serif;
+
+.table-container
+  width: 100vw
+  height: 70vh
+  padding: 10px
+
+table
+  width: 100%
+  border-spacing: 0
+  overflow: hidden
+  text-align: center
+  background-color: #e47d7d
+  border-radius: 15px
+  thead
+    color: #fff
+    tr
+      th
+        height: 100px
+        font-size: 1.3em
+        &:nth-child(1)
+          background-color: rgb(121,121,168)
+        &:nth-child(2)
+          background-color: rgb(100,100,158)
+        &:nth-child(3)
+          background-color: rgb(77,77,145)
+        &:nth-child(4)
+          background-color: rgb(44,44,128)
+        &:nth-child(5)
+          background-color: rgb(0,0,105)
+  tbody
+    td 
+      height: 50px
+      font-weight: 500
+      &:first-child
+        text-align: left
+        padding-left: 10px
+        width: 20%
+    tr
+      &:nth-child(odd)
+        background-color: #dbdbdb
+        td
+          &:nth-child(even)
+            background-color: #e7e7e7
+      &:nth-child(even)
+        background-color: #e7e7e7
+        td
+          &:nth-child(even)
+            background-color: #f3f3f3
+  tfoot
+    td
+      background-color: #dddddd
+      height: 80px
+    .table-footer-btn
+      width: 150px
+      font-size: 20px
+      text-transform: uppercase
+      padding: 15px
+
+
+    
